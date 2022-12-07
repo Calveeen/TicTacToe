@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    text-align: center;
+}
+
+td {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 35px;
+}
+
+table {
+    margin: 5px auto;
+    border: 2px solid black;
+}
+
+.vert {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.hori {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+td:hover{
+    background-color: rgba(172, 153, 153, 0.377);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* Players */
+
+.players{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+
+.player1, .player2{
+    text-align: center;
+    font-size: 25px;
+    border: 2px solid black;
+    width: 30%;
+    
+}
+.players p{
+    font-size: 40px;
+}
+
+
+/*Restart Button*/
+.restart{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.restart > button{
+    padding: 1rem 8.40rem;
+    cursor: pointer;
+    background-color: gray;
+    border: 3px solid black;
+}
+
+.restart > button:active{
+    transform: scale(0.98);
+    /* Scaling button to 0.98 to its original size */
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    /* Lowering the shadow */
+    transition: 0.1s;
+}
+ 
